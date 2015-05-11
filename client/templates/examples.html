@@ -1,0 +1,19 @@
+<template name="contextExample">
+	<p>{{someText}}</p>
+	<p>{{someNested.text}}</p>
+	<p>{{logContext}}</p>
+
+	
+</template>
+
+<!-- Block helpers -->
+<template name="blockHelperExample">
+	<div>
+		<h1></h1>
+		{{#if this}}
+			<p> {{> Template.contentBlock}}</p>
+		{{else}}
+			<p> {{> Template.elseBlock}}</p>
+		{{/if}}
+	</div>	
+</template>
